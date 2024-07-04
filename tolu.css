@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #ff85a2;
+    padding: 1rem;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 1rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#header {
+    background-color: #ffafcc;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#image-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#slackProfilePicture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#profile-section, #date-time-section, #my-goals-section, #link-section {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile-section h2, #my-goals-section h2, #link-section h2 {
+    color: #ff85a2;
+}
+
+#date-time-section {
+    text-align: center;
+}
+
+#currentTimeUTC, #currentDay {
+    background-color: #ffe4e1;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+#footer {
+    background-color: #ff85a2;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#footer ul li {
+    margin: 0 1rem;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#link-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#link-section ul li {
+    margin: 0.5rem 0;
+}
+
+#link-section ul li a {
+    color: #ff85a2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#link-section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* My web page responsiveness */
+@media (max-width: 600px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        margin: 0.5rem 0;
+    }
+
+    #profile-section, #date-time-section, #my-goals-section, #link-section {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    #footer ul {
+        flex-direction: column;
+    }
+
+    #footer ul li {
+        margin: 0.5rem 0;
+    }
+}
